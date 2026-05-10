@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #f8fafc);
+  color: #1e293b;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.survey-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+}
+
+.survey-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  color: #2563eb;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 36px;
+  color: #0f172a;
+}
+
+.description {
+  margin: 0 auto;
+  max-width: 560px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.questions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.question-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 700;
+  color: #334155;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+  transition: 0.2s;
+  background: #f8fafc;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.buttons {
+  display: flex;
+  gap: 14px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary-button {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.primary-button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.secondary-button {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+.secondary-button:hover {
+  background: #cbd5e1;
+}
+
+.success-message {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .survey-card {
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+}
